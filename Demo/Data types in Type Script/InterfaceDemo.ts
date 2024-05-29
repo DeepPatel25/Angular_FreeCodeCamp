@@ -13,7 +13,8 @@ export interface IEmployee {
     email: string
 }
 
-let employee: IEmployee = {
+// Object Destructuring
+let { name: username, email: useremail }: IEmployee = {
     id: 1,
     age: 22,
     name: "Deep",
