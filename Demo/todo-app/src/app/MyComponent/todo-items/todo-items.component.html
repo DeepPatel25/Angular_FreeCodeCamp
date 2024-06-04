@@ -1,0 +1,11 @@
+<app-add-todo-item (addTodoItem)="addTodoItemInLS($event)"></app-add-todo-item>
+
+<div
+  class="container-fluid border border-solid my-3 mx-5"
+  *ngFor="let todo of todos"
+>
+  <app-todo-item-display
+    [todo]="todo"
+    (deleteItem)="deleteTodoItemFromLS($event)"
+  ></app-todo-item-display>
+</div>

@@ -1,0 +1,23 @@
+<div class="container-fluid mx-5 my-3">
+  <h3>Add todo item</h3>
+  <form (ngSubmit)="addTodo()">
+    <div class="form-group">
+      <label class="form-check-label d-block" for="title">Title</label>
+      <input type="text" id="title" name="title" [(ngModel)]="todo.title" />
+    </div>
+    <div class="form-group">
+      <label class="form-check-label d-block" for="description"
+        >Description</label
+      >
+      <input
+        type="text"
+        id="description"
+        name="description"
+        [(ngModel)]="todo.description"
+      />
+    </div>
+    <div class="form-group">
+      <button class="btn btn-primary my-2" type="submit">Submit</button>
+    </div>
+  </form>
+</div>
